@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var parTotal = 0;
 
 	$("#jsonGo").click(function(){
-
+		$("#jsonGo, #xmlGo").hide();
 		//hides everything in case the user has already
 		//$("table, div, #showForm, #updateScores").hide();
 
@@ -119,6 +119,10 @@ $(document).ready(function(){
 	});
 
 	$("#xmlGo").click(function(){
+
+		$("#jsonGo, #xmlGo").hide();
+		$("#scoreBoard, #scoreboardTable").show();
+		$("#showFormButton").show();
 
 		//hides everything in case the user has already clicked on the jsonGo button
 		//$(".hideAll, #scoreboardTable td, #scoreboardTable thead, .playerName").hide();

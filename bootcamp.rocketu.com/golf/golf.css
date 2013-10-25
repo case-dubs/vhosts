@@ -5,7 +5,8 @@ body{
 }
 
 h1{
-	color: 
+	margin-top: 50px;
+	margin-bottom: 0px;
 }
 
 #container {
@@ -65,7 +66,7 @@ td {
 
 table{
 	display: none;
-	margin: 25px auto;
+	margin: 20px auto;
 }
 
 
@@ -91,7 +92,7 @@ button{
 	box-shadow: 0;
 	font-size: 13px;
 	text-transform: uppercase;
-	margin: 10px;
+	margin: 25px 10px;
 }
 /*.hideAll{
 	display: none;
