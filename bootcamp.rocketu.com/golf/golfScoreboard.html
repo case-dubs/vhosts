@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+	<title>Casey's Golf Scoreboard</title>
+	<link rel="stylesheet" type="text/css" href="golf.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<!--<script type="text/javascript" src="golf-scores-xml.js"></script>-->
+	<script type="text/javascript" src="golf2.js"></script>
+	<!--<script type="text/javascript" src="golf-scores-xml.js"></script>
+	<script type="text/javascript" src="golf-xml2.js"></script>-->
+</head>
+<body>
+	<div id="container">
+		<h1>Tee Time</h1>
+		<button id="jsonGo">Load in Json!</button>
+		<button id="xmlGo">Load in XML!</button><br>
+		<div class="hideAll" class="hideScoreForm" id="scoreForm">
+			<table class="hideScoreForm" class="hideAll" id="scoreFormTable">
+				<thead>
+					<tr>
+						<th colspan="11">Golf Scoreboard</th>
+					</tr>
+					<tr class="holes">
+						<td>Hole</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+						<td>7</td><td>8</td><td>9</td><td>Total</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="par">
+						<td>Par</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="golfButtons" class="hideScoreForm" class="hideAll" id="updateScores">Update Scores</button>
+		</div>
+		<div class="hideAll" id="scoreBoard">
+			<table class="hideAll" id="scoreboardTable">
+				<thead>
+					<tr>
+						<th colspan="11">Golf Scoreboard</th>
+					</tr>
+					<tr class="holes">
+						<td>Hole</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+						<td>7</td><td>8</td><td>9</td><td>Total</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="par">
+						<td>Par</td>
+					</tr>
+				</tbody>
+			</table>
+			<button  class="golfButtons"  class="hideAll" id="showFormButton">Show Form</button>
+		</div>
+	</div>
+</body>
+</HTML>

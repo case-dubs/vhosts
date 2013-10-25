@@ -1,0 +1,98 @@
+body{
+	font-family: Arial;
+	background-color: rgba(131, 175, 155, 0.2);
+	font-size: 14px;
+}
+
+h1{
+	color: 
+}
+
+#container {
+	width: 850px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+table, td, th, tr {
+	/*border: none;*/
+	margin: 0px;
+	padding: 3px;
+	text-align: center;
+}
+
+thead tbody {
+	border: 1px solid gray;
+} 
+
+table thead tr:first-child {
+	background-color: #83AF9B;
+	color: white;
+	height: 30px;
+}
+
+table thead tr:nth-child(2) {
+	background-color: #83AF9B;
+	color: white;
+	height: 30px;
+}
+
+table tbody tr:nth-child(even) {
+ 	background-color: #F9CDAD;
+}
+
+table tbody tr:nth-child(odd) {
+ 	background-color: #C8C8A9;
+}
+
+table tbody tr:nth-child(1) {
+ 	background-color: #83AF9B;
+ 	color: white
+}
+/*table tr td:first-child{
+	background-color: #EBE54D;
+}*/
+
+td {
+	width: 10px;
+	height: 15px;
+}
+
+#scoreBoard td {
+	width: 35px;
+	height: 25px;
+}
+
+table{
+	display: none;
+	margin: 25px auto;
+}
+
+
+
+input {
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.golfButtons{
+	display: none;
+}
+
+button{
+	float: center;
+	border: none;
+	width: 130px;
+	height: 50px;
+	border-radius: 15px;
+	background-color: #FE4365;
+	color: white;
+	box-shadow: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 10px;
+}
+/*.hideAll{
+	display: none;
+}*/
