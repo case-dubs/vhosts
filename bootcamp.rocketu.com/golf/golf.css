@@ -1,12 +1,13 @@
 body{
 	font-family: Arial;
-	background-color: rgba(131, 175, 155, 0.2);
+	background-color: rgba(179,224,153, 0.2);
 	font-size: 14px;
 }
 
 h1{
 	margin-top: 50px;
 	margin-bottom: 0px;
+	color: rgb(38, 45, 69);
 }
 
 #container {
@@ -18,7 +19,7 @@ h1{
 table, td, th, tr {
 	/*border: none;*/
 	margin: 0px;
-	padding: 3px;
+	padding: 5px;
 	text-align: center;
 }
 
@@ -27,27 +28,27 @@ thead tbody {
 } 
 
 table thead tr:first-child {
-	background-color: #83AF9B;
+	background-color: rgba(54,65,99,1);
 	color: white;
 	height: 30px;
 }
 
 table thead tr:nth-child(2) {
-	background-color: #83AF9B;
+	background-color: rgba(54,65,99,.75);
 	color: white;
 	height: 30px;
 }
 
 table tbody tr:nth-child(even) {
- 	background-color: #F9CDAD;
+ 	background-color: rgba(255,234,173,.35);
 }
 
 table tbody tr:nth-child(odd) {
- 	background-color: #C8C8A9;
+ 	background-color: rgba(179,224,153,.35);
 }
 
 table tbody tr:nth-child(1) {
- 	background-color: #83AF9B;
+ 	background-color: rgba(54,65,99,1);
  	color: white
 }
 /*table tr td:first-child{
@@ -67,6 +68,7 @@ td {
 table{
 	display: none;
 	margin: 20px auto;
+	border-collapse: collapse;
 }
 
 
@@ -87,7 +89,8 @@ button{
 	width: 130px;
 	height: 50px;
 	border-radius: 15px;
-	background-color: #FE4365;
+	background-color: #D14334;
+/*	background-color: #FE4365;*/
 	color: white;
 	box-shadow: 0;
 	font-size: 13px;
