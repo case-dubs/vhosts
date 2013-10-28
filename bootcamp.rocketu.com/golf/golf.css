@@ -1,5 +1,17 @@
 body{
 	font-family: Arial;
+	/*;
+	white: rgb(251,251,252);
+	lighter orange: rgb(216, 86, 64);
+	darker orange: #D14334;
+	lighter green: rgb(51,190,165);
+	darker green: rgb (51, 115, 102);
+	lightest grey: rgb(107,119,126);
+	grey (text): rgb(46,59,69);
+	dark grey: rgb(31,40,44);
+	darker grey: rgb(23,32,34);
+	
+	*/
 	background-color: rgba(179,224,153, 0.2);
 	font-size: 14px;
 }

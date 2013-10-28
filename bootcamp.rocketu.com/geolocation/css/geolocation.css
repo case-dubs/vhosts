@@ -1,0 +1,24 @@
+*{
+	text-align: left;
+}
+
+body{
+	padding: 20px 50px;
+}
+
+div table{
+	float: left;
+	width: 50%;
+	display: inline-block;
+}
+
+#geo-map{
+	float: right;
+	width: 50%;
+	margin-top: -40px;
+}
+
+#location-map{
+	width: 450px;
+	height: 300px;
+}
