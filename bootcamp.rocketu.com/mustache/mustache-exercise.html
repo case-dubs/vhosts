@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="mustache.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="application.js"></script>
+</head>
+<body>
+	<h1>Mustache Exercises</h1>
+	<button type="button" id="Exercise1">Exercise 1</button>
+	<button type="button" id="Exercise2">Exercise 2</button>
+	<button type="button" id="Exercise3">Exercise 3</button>
+	<button type="button" id="Exercise4">Exercise 4</button>
+	<button type="button" id="Exercise5">Exercise 5</button>
+	<button type="button" id="Exercise6">Exercise 6</button>
+	<button type="button" id="Exercise7">Exercise 7</button>
+	<div id="exercise-content"></div>
+	
+	<script id="exercise2-template" type="text/template">
+		<h3> {{fname}} {{lname}} </h3>
+		<p> Cell: {{cellnum}}</p>
+	</script>
+	<script id="exercise3-template" type="text/template">
+		<p>Skills</p>
+		<ul>
+		{{#skills}}
+			<li>{{.}}</li>
+		{{/skills}}
+		</ul>
+	</script>
+	<script id="exercise4-template" type="text/template">
+		<p>Employees</p>
+		<ul>
+		{{#employees}}
+			<li>{{name}}</li>
+				<ul>		
+					<li>Cell: {{cellnum}}</li> 
+					<li>Email: {{email}} </li>
+					<li><span>Skills</span>
+						<ul>{{#skills}}
+							<li>{{.}}</li>
+						{{/skills}}
+						</ul>
+				</ul><br>
+		{{/employees}}
+		</ul>
+	</script>
+	<script id="exercise5-template" type="text/template">
+		<h3>Employees</h3>
+			<ul>
+			{{#employees}}
+				<li>{{name}}</li>
+					<ul>
+						<li><p>Contact:</p>
+							<ul>
+								<li>{{contact.cellnum}}</li>
+								<li>{{contact.email}}</li>
+							</ul>
+						</li>
+						<li><span>Skills:</span>
+							<ul>
+							{{#skills}}
+								<li>{{.}}</li>
+							{{/skills}}
+							</ul>
+						</li>
+					</ul>
+				{{/employees}}
+			</ul>
+	</script>
+	<script type="text/template" id="exercise6-template">
+		<h3>Employees</h3>
+		<ul>
+		{{#employees}}
+			<li>{{name}}</li>
+				<ul>
+					<li><p>Contact:</p>
+						<ul>
+						{{#contact}}
+							<li>{{cellnum}}</li>
+							<li>{{email}}</li>
+						{{/contact}}
+						</ul>
+					</li>
+					<li><span>Skills:</span>
+						<ul>
+						{{#skills}}
+							<li>{{.}}</li>
+						{{/skills}}
+						</ul>
+					</li>
+				</ul>
+		{{/employees}}
+		</ul>
+	</script>
+	<script type="text/template" id="employee-partial-template">
+			<li>{{name}}</li>
+				<ul>
+					<li><p>Contact:</p>
+						<ul>
+						{{#contact}}
+							<li>{{cellnum}}</li>
+							<li>{{email}}</li>
+						{{/contact}}
+						</ul>
+					</li>
+					<li><span>Skills:</span>
+						<ul>
+						{{#skills}}
+							<li>{{.}}</li>
+						{{/skills}}
+						</ul>
+					</li>
+				</ul>
+	</script>
+	<script type="text/template" id="exercise7-template">
+		<h3>Employees</h3>
+		<ul>
+		{{#employees}}
+			{{>listitem}}
+		{{/employees}}
+		</ul>
+	</script>
+</body>
+</html>

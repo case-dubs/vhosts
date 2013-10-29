@@ -1,0 +1,210 @@
+/*
+	white: rgb(251,251,252);
+	
+	lighter orange: rgb(216, 86, 64);
+	darker orange: #D14334;
+	
+	lighter green: rgb(51,190,165);
+	darker green: rgb (51, 115, 102);
+	
+	lightest grey: rgb(107,119,126);
+	grey (text): rgb(46,59,69);
+	dark grey: rgb(31,40,44);
+	darker grey: rgb(23,32,34);
+
+	yellow accent: rgb(250,213,55)
+
+	super light beige: #F3F0F0 / rgb (243, 240, 240)
+	dark brown: rgb (80, 84, 70);*/
+
+body {
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 16px;
+	line-height: 150%;
+	color: #504a46;
+}
+
+h1 {
+	font-size: 52px;
+	/*font-weight: bold;*/
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 32px;
+	/*font-weight: bold;*/
+	letter-spacing: 1.25px;
+}
+
+h3 {
+	font-size: 18px;
+	letter-spacing: 1.25px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(80, 84, 70);
+}
+
+a:hover{
+	color: white;
+}
+
+/*Top Nav*/
+
+.highlightedNav{
+	background-color: rgba(80, 84, 70, .3);
+	/*border: 1px solid rgb(80, 84, 70);*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+}
+
+.highlightedNav:hover{
+	background-color: rgba(80, 84, 70, .3);
+}
+.highlightedNav:hover a{
+	color: white;
+}
+
+.highlightedNav a{
+	color: rgb(243, 240, 240);
+}
+
+.highlightedNav a:hover{
+	color: #F3F0F0;
+
+}
+
+header {
+	z-index: 1;
+	display: block;
+	position: relative;
+	height: 75px;
+	/*border-bottom: 1px solid #e0e0e0;*/
+	background: #F3F0F0;
+	width: 100%;
+	min-width: 550px;
+}
+
+header h2{
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 0px 75px;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+header h2 a {
+	/*color: #504a46;*/
+	font-weight: 500;
+	display: inline;
+	float: left;
+	/*position: absolute;*/
+	text-align: left;
+	margin-top: 0px;
+	color: rgb (80, 84, 70);
+	/*color: rgb(51,190,165);*/
+}
+
+header h2 a:hover{
+	color: white;
+}
+
+header ul{
+	position: relative;
+	display: inline-block;
+	margin: 25px 75px 15px 80px;
+	float: right;
+	/*text-align: right;*/
+}
+
+header ul li {
+	display: inline;
+	padding: 0px 15px;
+}
+
+/*splash area*/
+
+#splashContainer{
+	position: relative;
+	background: url('/haply/images/happy_woman2.jpg') no-repeat;
+	background-size: cover;
+	height: 550px;
+	top: 0px;
+	width: 100%;
+}
+
+/*centered
+
+#heroMessage{
+	width: 65%;
+	height: 350px;
+	margin: 0px auto;
+	padding-top: 225px;
+	color: #F3F0F0;
+	min-width: 650px;
+}*/
+
+#heroMessage{
+	width: 35%;
+	height: 350px;
+	float: right;
+	padding-top: 125px;
+	/*background-color: rgba(0,0,0,.5);*/
+	color: #F3F0F0;
+	margin-right: 75px;
+	min-width: 350px;
+}
+
+#heroMessage h1 {
+	font-weight: normal;
+	line-height: 1;
+	font-size: 36px;
+}
+
+#heroMessage h2 {
+	font-weight: normal;
+	line-height: 1.25;
+	font-size: 20px;
+}
+
+.homepageButton{
+	width: 150px;
+	float: center;
+	height: 65px;
+	border-radius: 10px;
+	display: inline;
+	position: relative;
+	margin: 20px 10px;
+}
+
+.homepageButton a{
+	color: white;
+}
+
+#learnMore{
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid white;
+	color: white;
+}
+
+#learnMore:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border: none;
+}
+
+#getStarted{
+	background-color: rgb(51,190,165);
+	border: none;
+	color: white;
+}
+
+#getStarted:hover{
+	background-color: rgba(0, 0, 0, .5);
+	border: none;
+}
