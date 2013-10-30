@@ -1,3 +1,25 @@
+/*
+
+Default Text Color - #45494d;, rgb(69,73,77), p, h2, h4
+
+Header Text:  #626263, rgb (98,98,99) - Size - h3
+
+Photo(background) Text Header h1
+
+h1 38px, H2 30px,  h3 20px uppercase, h4 bold 14px, text 14px, line height 1.5
+
+BUTTONS - Graphic Background:
+
+Main - Turqouise: #50bfa4, rgb(180,191,164) - shaddowed version rgb(46,109,94);
+
+Secondary - Orange: #f1720c, rgb(241, 114, 12) - shadowed version rgb(136, 53, 8);
+
+BACKGROUNDS:
+
+Grey: #f7f5f2 rgb(247,245,242)
+
+*/
+
 body {
 	font-family: "proxima-nova-alt",Proxima Nova,Helvetica Neue,Helvetica,Arial,sans-serif;
 	color: rgb(69,73,77);
@@ -50,7 +72,7 @@ p{
 
 a {
 	text-decoration: none;
-	color: rgb(0,185,128);
+	color: rgb(0,85,128);
 }
 
 a:hover{
@@ -71,8 +93,9 @@ button {
 	background-color:  #50bfa4;
 	border-radius: 10px;
 	color: white;
-	padding: 20px 10px;
+	padding: 20px 35px;
 	border: none;
+	text-transform: uppercase;
 }
 
 .shadedowedOrange{
@@ -125,7 +148,7 @@ button:hover{
 }
 
 .highlightedNav:hover{
-	background-color: rgba(80, 84, 70, .3);
+	background-color: #50bfa4;
 }
 .highlightedNav:hover a{
 	color: white;
@@ -169,7 +192,7 @@ header h2 a {
 	/*position: absolute;*/
 	text-align: left;
 	margin-top: 0px;
-	color: rgb (80, 84, 70);
+	color: #50bfa4;
 	/*color: rgb(51,190,165);*/
 }
 
@@ -190,72 +213,105 @@ header ul li {
 	padding: 0px 15px;
 }
 
-
-/*splash area*/
-
-#splashContainer{
-	position: relative;
-	background: url('/haply/images/happy_woman2.jpg') no-repeat;
-	background-size: cover;
-	height: 550px;
-	top: 0px;
-	width: 100%;
+header li a:hover{
+	color: #50bfa4;
 }
 
-/*centered
+/*Main body templates*/
 
-#heroMessage{
-	width: 65%;
-	height: 350px;
-	margin: 0px auto;
-	padding-top: 225px;
-	color: #F3F0F0;
-	min-width: 650px;
+.centeredTextDiv{
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+	padding: 25px;
+}
+
+input{
+	height: 25px;
+	border: 1px solid rgba(98,98,99,.2);
+	width: 250px;
+	margin: 5px 0px 10px;
+	padding: 5px 10px;
+}
+
+/*footer*/
+
+footer {
+	margin-top: 50px;
+	text-align: left;
+}
+
+/*#footerContainer{
+	width: 1040px;
+	margin: 0 auto;
 }*/
 
-#heroMessage{
-	width: 35%;
-	height: 350px;
-	float: right;
-	padding-top: 125px;
-	/*background-color: rgba(0,0,0,.5);*/
-	color: #F3F0F0;
+#footerTop{
+	background-color: rgb(247,245,242);
+	height: 250px;
+	line-height: 2;
+}
+
+.footerList{
+	width: 30%;
+	float: left;
+	margin-top: 20px;
+	text-align: left;
+	display: inline-block;
+}
+
+.footerList:nth-child(3){
+	text-align: right;
 	margin-right: 75px;
-	min-width: 350px;
 }
 
-#heroMessage h1 {
-	font-weight: normal;
-	line-height: 1;
-	font-size: 36px;
+.footerList h3{
+	margin-left: 75px;
 }
 
-#heroMessage h2 {
-	font-weight: normal;
-	line-height: 1.25;
-	font-size: 20px;
+.footerList ul{
+	list-style-type: none;
+	margin-left: none;
+	margin-left: 35px;
 }
 
+.footerList li{
+	text-transform: none;
+	text-align: left;
+}
 
+.footerList li a:hover{
+	color: #50bfa4;
+}
 
-/*#learnMore{
-	background-color: rgba(0, 0, 0, 0);
-	border: 2px solid white;
+#emailUpdates{
+	position: relative;
 	color: white;
+	background-color: #50bfa4;
+	border-radius: 10px;
+	border: none;
+	height: 45px;
+	width: 250px;
+	margin-left: 75px;
 }
 
-#learnMore:hover{
-	background-color: rgba(0, 0, 0, .5);
-	border: none;
+#emailUpdatesButton{
+	position: relative;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	width: 0; 
+	height: 0; 
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-left: 13px solid white;
+	margin-left: 310px;
+	top: -58px;
 }
 
-#getStarted{
-	background-color: rgb(51,190,165);
-	border: none;
-	color: white;
+#footerBottom{
+	background-color: white;
+	height: 50px;
+	padding-left: 75px;
+	padding-top: 10px;
 }
-
-#getStarted:hover{
-	background-color: rgba(0, 0, 0, .5);
-	border: none;
-}*/

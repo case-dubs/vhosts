@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>HTML5 Local Storage</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/localstorage-obj.js"></script>
+</header>
+<body>
+	<h1>HTML 5 Local Storage Exercise</h1>
+	<p class="status-message"></p>
+	<div id="data-dashboard">
+		<form id="detailsForm">
+			<h2>Personal Details</h2>
+			<label for="firstname">First name:</label>
+			<input type="text" name="firstname" id="firstname"><button type="button" data-localitem="firstname" class="clearInput">Clear</button><br>
+			<label for="lastname">Last name:</label>
+			<input type="text" name="lastname" id="lastname"><button type="button" data-localitem="lastname" class="clearInput">Clear</button><br>
+			<label for="email">Email:</label>
+			<input type="text" name="email" id="email"><button type="button" data-localitem="email" class="clearInput">Clear</button><br>
+			<label for="phone">Phone:</label>
+			<input type="text" name="phone" id="phone"><button type="button" data-localitem="phone" class="clearInput">Clear</button><br>
+			<button type="button" id="update-details">Update</button><button type="button" id="clear">Clear Local Storage</button>
+		</form>
+	</div>
+</body>
+</html>
