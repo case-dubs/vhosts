@@ -45,7 +45,7 @@ header{
 }
 
 .signUpContainer p{
-	line-height: .75;
+	line-height: 1.5;
 }
 
 .signUpContainer form{
@@ -121,15 +121,14 @@ header{
 	display: inline-block;
 }
 
+#emailVerificationCode{
+	text-align: center;
+}
+
 #footerTop{
 	background-color: white;
 }
 
 #footerBottom{
 	background-color: rgb(247,245,242);
-}
-
-.narrowInput{
-	width: 100px;
-	margin-right: 15px;
 }

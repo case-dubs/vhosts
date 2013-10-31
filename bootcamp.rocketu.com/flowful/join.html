@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Haply</title>
+	<title>Flowful</title>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/localstorage.js"></script>
+	<script type="text/javascript" src="js/mustache.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/join1.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/template.css">
 	<link rel="stylesheet" type="text/css" href="css/join.css">
 </head>
 <body>
 	<header>
-			<h2 id="logo"><a href="#">Haply</a></h2>
+			<h2 id="logo"><a href="/Flowful">Flowful</a></h2>
 			<ul id="nav">
 				<li><a href="tour">How it Works</a></li>
 				<li><a href="about">About</a></li>
@@ -20,7 +24,7 @@
 	</header>
 	
 	<div class="centeredTextDiv">
-		<h2>Welcome to the Haply community!</h2>
+		<h2>Welcome to the Flowful community!</h2>
 		<p>Just 3 quick steps and you'll be ready to go.</p>
 		<div class="signUpContainer" >
 			<div class="signUpHeaderBar">
@@ -31,24 +35,27 @@
 					<h3>Register your account</h3>
 				</div>
 			</div>
-			<form>
+			<form id="signUpForm">
 				<label for="firstname">First Name<sup>*</sup></label><br>
-				<input type="text" name="firstname" id="firstname"><br>
+				<input type="text" name="firstname" id="firstname" required><br>
 				<label for="lastname">Last<sup>*</sup></label><br>
-				<input type="text" name="lastname" id="lastname"><br>
+				<input type="text" name="lastname" id="lastname" required><br>
 				<label for="email">Email Address<sup>*</sup></label><br>
-				<input type="text" name="email" id="email"><br>
+				<input type="email" name="email" id="email" required><br>
 				<label for="emailConfirm">Confirm Email<sup>*</sup></label><br>
-				<input type="text" name="emailConfirm" id="emailConfirm"><br>
+				<input type="email" name="emailConfirm" id="emailConfirm" required><br>
 				<label for="password">Password<sup>*</sup></label><br>
-				<input type="text" name="password" id="password"><br>
+				<input type="password" name="password" id="password" required><br>
 				<label for="passwordConfirm">Confirm Password<sup>*</sup></label><br>
-				<input type="text" name="passwordConfirm" id="passwordConfirm"><br>
+				<input type="password" name="passwordConfirm" id="passwordConfirm" required><br>
 				<div id="formButtonArea">
 					<p>By clicking "continue" you agree to our <a href="#">	terms of service</a>.</p>
 					<button id="signUp1">Continue</button>
 				</div>
 			</form>
+			<div id="verifyEmail">
+				
+			</div>
 
 		</div>
 		<div class="signUpContainer">
@@ -77,7 +84,7 @@
 		<div id="footerTop">
 			<div id="footerContainer">
 				<div class="footerList">
-					<h3>Haply</h3>
+					<h3>Flowful</h3>
 						<ul>
 							<li><a href="about.html">About Us</a></li>
 							<li><a href="tour.html">How it Works</a></li>
@@ -99,8 +106,21 @@
 			</div>
 		</div>
 		<div id="footerBottom">
-			<p> (c) 2013 Haply. All right reserved. See our <a href="#">terms of use.</a></p>
+			<p> (c) 2013 Flowful. All right reserved. See our <a href="#">terms of use.</a></p>
 		</div>
+
 	</footer>
+	<script id="verifyEmailTemplate" type="text/template">
+		<h2>Verify your email address</h2>
+		<p>
+		We have sent a confirmation to {{email}}. Please check your inbox and enter your unique verification code below.
+		</p>
+		<div id="emailVerificationCode">
+			<input type="text" placeholder="your verification code">
+			<button id="verifyEmailButton" type=button>Verify</button>
+		</div>
+		<p><a href="#">Resend</a></p>
+		<p>Look like the wrong email address? <a href="join.html">Start Over</p>
+	</script>
 </body>
 </html>

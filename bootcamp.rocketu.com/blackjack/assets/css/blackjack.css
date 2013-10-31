@@ -1,0 +1,75 @@
+body{
+	background-color: #003054;
+	color: white;
+	font-family: arial;
+}
+
+#wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#wrapper img:nth-child(1){
+	display: inline-block;
+	width: 250px;
+	margin-top: 25px;
+}
+
+#wrapper h1:nth-child(2){
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#card-table{
+	width: 900px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #19c36b;
+	border-radius: 30px;
+}
+
+#card-table h2:first-child{
+	margin: 0 auto;
+	text-align: center;
+	height: 50px;
+	padding-top: 30px;
+}
+
+#dealer-hand{
+	width: 900px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+#status{
+	text-align: center;
+	width: 900px;
+	margin: 0 auto;
+	height: 50px;
+}
+
+#player-hand{
+	width: 900px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+#player-hand h2:first-child{
+	text-align: center;
+	height: 50px;
+}
+
+#player-options{
+	width: 900px;
+	height: 150px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#hit{
+	display: none;
+}
+
+#stand{
+	display: none;
+}
